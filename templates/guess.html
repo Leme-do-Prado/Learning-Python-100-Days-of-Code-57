@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personalized Greeting</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1f2937; /* dark gray */
+      color: #e0e7ff; /* light indigo */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      color: #6366f1; /* indigo-500 */
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      color: #a5b4fc; /* indigo-300 */
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    h3 {
+      color: #d1d5db; /* gray-300 */
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hey, {{ name.title() }}!</h1>
+  <h2>I think you are {{ gender }}.</h2>
+  <h3>And maybe {{ age }} years old.</h3>
+</body>
+</html>
